@@ -1,0 +1,13 @@
+
+select p.name
+from drivers_license dl
+join person p on dl.id=license_id
+join get_fit_now_member g on p.id=person_id
+where dl.id='423327' and gender='male' and membership_status='gold';
+
+select dl.id, name, hair_color, car_model, height, annual_income, event_name
+from drivers_license dl
+join person p on dl.id=license_id
+join income i on p.ssn=i.ssn
+join facebook_event_checkin f on p.id=person_id
+where hair_color='red' and gender='female' and car_model='Model S';
