@@ -7,6 +7,7 @@ Created on Fri Apr  3 12:21:32 2020
 
 import pandas as pd
 import os
+
 Sex=['M','F','Undetermined']
 Gender=input('For this study on which gender do you want the analysis (M/F/Undetermined) ? ')
 while Gender not in Sex:
